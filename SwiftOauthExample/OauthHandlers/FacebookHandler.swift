@@ -10,10 +10,9 @@ import UIKit
 import OAuthSwift
 import PromiseKit
 
-@objc class FacebookHandler:GenericOAuthHandler, GenericOAuthHandlerProtocol, Listener
+@objc class FacebookHandler:GenericOAuthHandler, GenericOAuthHandlerProtocol
 {
     // dependency injections
-    var api:PlayolaAPI = PlayolaAPI.sharedInstance()
     var observers:[NSObjectProtocol] = Array()
     
     override init()
@@ -28,8 +27,8 @@ import PromiseKit
     override func generateOAuth() -> OAuth2Swift
     {
         return OAuth2Swift(
-            consumerKey:    kFacebookAppID,
-            consumerSecret: kFacebookConsumerSecret,
+            consumerKey:    FacebookSecrets.appID,
+            consumerSecret: FacebookSecrets.consumerSecret,
             authorizeUrl:   "https://www.facebook.com/dialog/oauth",
             accessTokenUrl: "https://graph.facebook.com/oauth/access_token",
             responseType:   "code"
