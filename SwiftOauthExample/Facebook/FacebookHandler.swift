@@ -62,6 +62,8 @@ import PromiseKit
         }
     }
     
+    public var signInStatusChanged:Notification.Name = Notification.Name(rawValue: "FacebookDidSignInNotification")
+    
     //------------------------------------------------------------------------------
     
     func setupTokenKeys()

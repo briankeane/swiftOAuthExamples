@@ -7,6 +7,8 @@ target 'SwiftOauthExample' do
 
   pod 'OAuthSwift', '~> 1.2.0'
   pod 'PromiseKit'
+  pod 'Alamofire'
+  
   # Pods for SwiftOauthExample
 
   target 'SwiftOauthExampleTests' do

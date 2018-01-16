@@ -32,6 +32,8 @@ protocol GenericOAuthHandlerProtocol: SFSafariViewControllerDelegate
     // MARK: default implementations provided in extension
     var defaults:UserDefaults { get }
     
+    var signInStatusChanged:Notification.Name { get set }
+    
     func checkForStoredTokens()
     
     /// if successful, resolves to a promise containing the accessTokenString

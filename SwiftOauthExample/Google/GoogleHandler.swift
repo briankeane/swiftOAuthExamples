@@ -83,6 +83,7 @@ import PromiseKit
             ].joined(separator: " ")
     }
     
+    var signInStatusChanged: Notification.Name = Notification.Name(rawValue: "GoogleSignInStatusChanged")
     //------------------------------------------------------------------------------
     // Singleton
     //------------------------------------------------------------------------------

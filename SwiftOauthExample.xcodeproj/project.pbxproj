@@ -18,7 +18,11 @@
 		4B133CFF200C0FF4008C7B68 /* GenericOAuthHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B133CFE200C0FF4008C7B68 /* GenericOAuthHandlerProtocol.swift */; };
 		4B133D01200C15FB008C7B68 /* GenericOauthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B133D00200C15FB008C7B68 /* GenericOauthHandler.swift */; };
 		4B133D03200C163E008C7B68 /* FacebookHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B133D02200C163E008C7B68 /* FacebookHandler.swift */; };
-		4B133D05200C16BE008C7B68 /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B133D04200C16BE008C7B68 /* secrets.swift */; };
+		4B133D05200C16BE008C7B68 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B133D04200C16BE008C7B68 /* Secrets.swift */; };
+		4B133D09200C191E008C7B68 /* GoogleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B133D08200C191E008C7B68 /* GoogleHandler.swift */; };
+		4B133D0D200C1AD8008C7B68 /* FacebookSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B133D0C200C1AD8008C7B68 /* FacebookSignInViewController.swift */; };
+		4B133D0F200C1F8F008C7B68 /* SpotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B133D0E200C1F8F008C7B68 /* SpotifyViewController.swift */; };
+		4B133D11200C2123008C7B68 /* SpotifyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B133D10200C2123008C7B68 /* SpotifyHandler.swift */; };
 		5E4CB63F720294E95E2B0867 /* Pods_SwiftOauthExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5770BD55A97ED334CBDB919 /* Pods_SwiftOauthExample.framework */; };
 		C2EB1A42BB50A07E8F02644F /* Pods_SwiftOauthExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155275EB37E18B81FDA46ED4 /* Pods_SwiftOauthExampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,7 +65,12 @@
 		4B133CFE200C0FF4008C7B68 /* GenericOAuthHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericOAuthHandlerProtocol.swift; sourceTree = "<group>"; };
 		4B133D00200C15FB008C7B68 /* GenericOauthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericOauthHandler.swift; sourceTree = "<group>"; };
 		4B133D02200C163E008C7B68 /* FacebookHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookHandler.swift; sourceTree = "<group>"; };
-		4B133D04200C16BE008C7B68 /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
+		4B133D04200C16BE008C7B68 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		4B133D06200C17C1008C7B68 /* SecretsSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsSample.swift; sourceTree = "<group>"; };
+		4B133D08200C191E008C7B68 /* GoogleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleHandler.swift; sourceTree = "<group>"; };
+		4B133D0C200C1AD8008C7B68 /* FacebookSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSignInViewController.swift; sourceTree = "<group>"; };
+		4B133D0E200C1F8F008C7B68 /* SpotifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyViewController.swift; sourceTree = "<group>"; };
+		4B133D10200C2123008C7B68 /* SpotifyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHandler.swift; sourceTree = "<group>"; };
 		B2BFC96CFE6A0DD1487AC934 /* Pods-SwiftOauthExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOauthExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOauthExample/Pods-SwiftOauthExample.release.xcconfig"; sourceTree = "<group>"; };
 		C9F3C7DDF3877F385324C7D7 /* Pods_SwiftOauthExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOauthExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D356EE3E09212E33C296A274 /* Pods-SwiftOauthExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOauthExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOauthExampleTests/Pods-SwiftOauthExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +141,9 @@
 		4B133CCF200C0C2A008C7B68 /* SwiftOauthExample */ = {
 			isa = PBXGroup;
 			children = (
+				4B56E8B9200EC39300A883FF /* Facebook */,
+				4B56E8B8200E758E00A883FF /* Spotify */,
+				4B56E8BA200EC3B400A883FF /* Google */,
 				4B133CD0200C0C2A008C7B68 /* AppDelegate.swift */,
 				4B133CD2200C0C2A008C7B68 /* ViewController.swift */,
 				4B133CFE200C0FF4008C7B68 /* GenericOAuthHandlerProtocol.swift */,
@@ -140,8 +152,7 @@
 				4B133CD9200C0C2A008C7B68 /* LaunchScreen.storyboard */,
 				4B133CDC200C0C2A008C7B68 /* Info.plist */,
 				4B133D00200C15FB008C7B68 /* GenericOauthHandler.swift */,
-				4B133D02200C163E008C7B68 /* FacebookHandler.swift */,
-				4B133D04200C16BE008C7B68 /* secrets.swift */,
+				4B133D0B200C1AAC008C7B68 /* Config */,
 			);
 			path = SwiftOauthExample;
 			sourceTree = "<group>";
@@ -162,6 +173,41 @@
 				4B133CF2200C0C2A008C7B68 /* Info.plist */,
 			);
 			path = SwiftOauthExampleUITests;
+			sourceTree = "<group>";
+		};
+		4B133D0B200C1AAC008C7B68 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4B133D04200C16BE008C7B68 /* Secrets.swift */,
+				4B133D06200C17C1008C7B68 /* SecretsSample.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4B56E8B8200E758E00A883FF /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				4B133D0E200C1F8F008C7B68 /* SpotifyViewController.swift */,
+				4B133D10200C2123008C7B68 /* SpotifyHandler.swift */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		4B56E8B9200EC39300A883FF /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				4B133D0C200C1AD8008C7B68 /* FacebookSignInViewController.swift */,
+				4B133D02200C163E008C7B68 /* FacebookHandler.swift */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		4B56E8BA200EC3B400A883FF /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				4B133D08200C191E008C7B68 /* GoogleHandler.swift */,
+			);
+			path = Google;
 			sourceTree = "<group>";
 		};
 		966D1C84F6F14A7B76E68EDB /* Pods */ = {
@@ -422,11 +468,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOauthExample/Pods-SwiftOauthExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
@@ -472,12 +520,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B133D11200C2123008C7B68 /* SpotifyHandler.swift in Sources */,
 				4B133D03200C163E008C7B68 /* FacebookHandler.swift in Sources */,
+				4B133D09200C191E008C7B68 /* GoogleHandler.swift in Sources */,
 				4B133D01200C15FB008C7B68 /* GenericOauthHandler.swift in Sources */,
+				4B133D0F200C1F8F008C7B68 /* SpotifyViewController.swift in Sources */,
 				4B133CD3200C0C2A008C7B68 /* ViewController.swift in Sources */,
+				4B133D0D200C1AD8008C7B68 /* FacebookSignInViewController.swift in Sources */,
 				4B133CFF200C0FF4008C7B68 /* GenericOAuthHandlerProtocol.swift in Sources */,
 				4B133CD1200C0C2A008C7B68 /* AppDelegate.swift in Sources */,
-				4B133D05200C16BE008C7B68 /* secrets.swift in Sources */,
+				4B133D05200C16BE008C7B68 /* Secrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
