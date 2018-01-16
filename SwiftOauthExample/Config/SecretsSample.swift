@@ -8,6 +8,11 @@
 
 import Foundation
 
+// To Add your own credentials to this file:
+//  1.  add this file to you main target (right now it belongs to no target)
+//  2.  replace id info below
+
+
 public class FacebookSecrets
 {
     public static var appID:String = "REPLACE_WITH_YOUR_GOOGLE_APP_ID"
